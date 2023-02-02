@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+}
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+.container {
+  height: 14rem;
+  width: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.btn-opt {
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: beige;
+  border: none;
+  font-size: 2.3rem;
+  border-radius: 3px;
+  box-shadow: -1px 3px 15px rgb(0 0 0 / 10%);
+  color: #4141e7;
+}
+.btn-opt:hover{
+    opacity: .9;
+}
+#restart {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#restart:active,
+#restart:hover {
+  outline: 0;
+}
+
+#restart span {
+  background-color: rgb(5, 6, 45);
+  padding: 12px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+#restart:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.popup{
+    background: linear-gradient(135deg, #ec6ead, #3494e6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    gap: 15px;
+    /* display: block; */
+    /* margin: 1.5em auto 0 auto; */
+}
+#new-game{
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    background: #0a0027;
+    color: white;
+    border: none;
+}
+#message{
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+}
+.popup.hide{
+    display: none;
+}
